@@ -488,3 +488,45 @@ social-links a:hover {
 .section h2::after {
   background: #330994; /* Keep original underline color */
 }
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  /* Adjust hero text sizes for better readability */
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  /* Stack contact info and form vertically */
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further reduce font-size on very small screens */
+  .hero h2 {
+    font-size: 30px;
+  }
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* Adjust navigation gap for smaller devices */
+  nav ul {
+    gap: 12px;
+  }
+  nav a {
+    font-size: 14px;
+  }
+}
